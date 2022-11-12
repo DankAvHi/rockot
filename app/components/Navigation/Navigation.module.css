@@ -1,0 +1,45 @@
+.Navigation {
+     position: sticky;
+     top: 0;
+
+     border-bottom: 1px solid #ffffff;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.logoLink {
+}
+.logoImage {
+}
+.container {
+     padding: 8px 12px;
+
+     max-width: 1440px;
+     width: 100%;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.linksList {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     gap: 24px;
+}
+
+.linkItem {
+}
+
+.link {
+     transition: 0.2s;
+}
+.link_active {
+     color: var(--rockot-gradient-top);
+}
+.link:hover {
+     color: var(--rockot-gradient-bottom);
+}
