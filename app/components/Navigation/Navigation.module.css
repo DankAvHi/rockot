@@ -4,15 +4,27 @@
 
      border-bottom: 1px solid #ffffff;
 
+     background-color: var(--app-background-color);
+
      display: flex;
      justify-content: center;
      align-items: center;
 }
 
-.logoLink {
+@media screen and (max-width: 425px) {
+     .Navigation {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+
+          border: none;
+
+          background-color: transparent;
+
+          justify-content: flex-end;
+     }
 }
-.logoImage {
-}
+
 .container {
      padding: 8px 12px;
 
@@ -24,22 +36,21 @@
      align-items: center;
 }
 
-.linksList {
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     gap: 24px;
-}
+@media screen and (max-width: 425px) {
+     .container {
+          border-radius: 12px;
 
-.linkItem {
-}
+          padding: 10px;
 
-.link {
-     transition: 0.2s;
-}
-.link_active {
-     color: var(--rockot-gradient-top);
-}
-.link:hover {
-     color: var(--rockot-gradient-bottom);
+          background-color: var(--app-background-color);
+          opacity: 0.75;
+
+          flex-direction: row-reverse;
+     }
+
+     .container_open {
+          opacity: 1;
+
+          gap: 12px;
+     }
 }

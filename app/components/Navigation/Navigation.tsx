@@ -1,44 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+import { useState } from "react";
+import { sitePages } from "../../globalData";
+import List from "./components/List/List";
+import Logo from "./components/Logo/Logo";
 import styles from "./Navigation.module.css";
-import logoImage from "/public/static/miniLogo.svg";
 
 const Navigation = () => {
+     const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+
+     const toggleNavigationButtonOnClickHandler = () => {
+          setIsNavigationOpen((prev) => !prev);
+     };
+
      return (
           <nav className={styles.Navigation}>
-               <div className={styles.container}>
-                    <Link href={"#"} className={styles.logoLink}>
-                         <Image
-                              className={styles.logoImage}
-                              src={"/static/miniLogo.svg"}
-                              width={logoImage.width}
-                              height={logoImage.height}
-                              alt={"Логотип клуба"}
-                         />
-                    </Link>
-
-                    <ul className={styles.linksList}>
-                         <li className={styles.linkItem}>
-                              <Link href="#" className={styles.link}>
-                                   {"Главная"}
-                              </Link>
-                         </li>
-                         <li className={styles.linkItem}>
-                              <Link href="#" className={styles.link}>
-                                   {"Галерея"}
-                              </Link>
-                         </li>
-                         <li className={styles.linkItem}>
-                              <Link href="#" className={styles.link}>
-                                   {"О Нас"}
-                              </Link>
-                         </li>
-                         <li className={styles.linkItem}>
-                              <Link href="#" className={styles.link}>
-                                   {"Контакты"}
-                              </Link>
-                         </li>
-                    </ul>
+               <div className={`${styles.container} ${isNavigationOpen && styles.container_open}`}>
+                    <Logo onClick={toggleNavigationButtonOnClickHandler} />
+                    <List
+                         linkOnClick={toggleNavigationButtonOnClickHandler}
+                         isNavigationOpen={isNavigationOpen}
+                         sitePages={sitePages}
+                    />
                </div>
           </nav>
      );

@@ -1,0 +1,28 @@
+.Link {
+}
+
+.link {
+     transition: 0.5s;
+}
+.link_active {
+     color: var(--rockot-gradient-top);
+}
+.link:hover {
+     color: var(--rockot-gradient-bottom);
+}
+
+@media screen and (max-width: 425px) {
+     .link {
+          font-size: 0.5rem;
+     }
+
+     .link_open {
+          font-size: 1rem;
+     }
+}
+
+@media screen and (max-width: 375px) {
+     .link {
+          font-size: 0.8rem;
+     }
+}
