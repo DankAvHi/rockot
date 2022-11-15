@@ -1,4 +1,5 @@
 import "../styles/index.css";
+import styles from "./app.module.css";
 import Navigation from "./components/Navigation/Navigation";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -7,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                <head />
                <body>
                     <Navigation />
-                    {children}
+                    <div className={styles.page}>{children}</div>
                </body>
           </html>
      );
