@@ -2,9 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  dangerouslyAllowSVG: true,
+
+
+
   experimental: {
-    appDir: true
+    appDir: true,
+
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true
+      }
+    ]
   }
 }
 
