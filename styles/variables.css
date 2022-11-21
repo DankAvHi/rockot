@@ -3,5 +3,6 @@
 :root {
      --app-background-color: var(--black-10);
      --app-font-size: 1.125rem;
+     --app-font-weight: 400;
      --app-font-family: var(--oswald-font);
 }
