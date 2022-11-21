@@ -14,6 +14,7 @@
 
      font-family: var(--app-font-family);
      font-size: var(--app-font-size);
+     font-weight: var(--app-font-weight);
      text-decoration: none;
      color: var(--white-100);
 }
@@ -31,6 +32,14 @@ img {
      -moz-user-select: none;
      -webkit-user-select: none;
      -ms-user-select: none;
+}
+
+a,
+p,
+span {
+     color: inherit;
+     font-size: inherit;
+     font-weight: inherit;
 }
 
 html,
