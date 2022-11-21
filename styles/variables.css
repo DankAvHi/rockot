@@ -1,7 +1,7 @@
 @import url("./fonts/index.font.css");
 @import url("./colors.css");
 :root {
-     --app-background-color: var(--black-00);
+     --app-background-color: var(--black-10);
      --app-font-size: 1.125rem;
      --app-font-family: var(--oswald-font);
 }
