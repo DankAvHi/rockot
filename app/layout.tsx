@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                <head />
                <body>
                     <Navigation />
-                    <div className={styles.page}>{children}</div>
+                    {children}
                </body>
           </html>
      );
