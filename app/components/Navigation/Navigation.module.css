@@ -11,7 +11,9 @@
      justify-content: center;
      align-items: center;
 }
-
+.Navigation_opacity {
+     opacity: 0.9;
+}
 @media screen and (max-width: 425px) {
      .Navigation {
           position: fixed;
