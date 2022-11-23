@@ -13,6 +13,26 @@
      animation: shadow 10s ease-in-out infinite;
 }
 
+@media screen and (max-width: 1024px) {
+     .Header {
+          background: url("./assets/backgroundTablet.jpg") center no-repeat;
+          background-size: cover;
+     }
+}
+
+@media screen and (max-width: 650px) {
+     .Header {
+          background: url("./assets/backgroundMobile.jpg") center no-repeat;
+          background-size: cover;
+     }
+}
+
+@media screen and (max-width: 425px) {
+     .Header {
+          min-height: 100vh;
+     }
+}
+
 @keyframes shadow {
      0% {
           filter: saturate(1);
