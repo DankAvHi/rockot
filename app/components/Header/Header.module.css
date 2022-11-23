@@ -103,6 +103,18 @@
      font-size: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+     .heading {
+          font-size: 1.5rem;
+     }
+}
+
+@media screen and (max-width: 425px) {
+     .heading {
+          font-size: 1.2rem;
+     }
+}
+
 .heroButton {
      transition: 0.4s;
 
@@ -113,6 +125,12 @@
      box-shadow: 0 0 20px var(--rockot-gradient-top);
 
      transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+     .heroButton {
+          font-size: 1.2rem;
+     }
 }
 
 @media screen and (max-width: 768px) {
@@ -126,5 +144,12 @@
           box-shadow: 0 0 20px var(--rockot-gradient-top);
 
           transform: scale(1.1);
+     }
+}
+
+@media screen and (max-width: 425px) {
+     .heroButton {
+          font-size: 1rem;
+          font-weight: 300;
      }
 }
