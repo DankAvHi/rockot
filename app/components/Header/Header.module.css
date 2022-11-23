@@ -28,7 +28,9 @@
 .content {
      transition: 0.4s;
 
-     border: 2px solid var(--glass-border-color);
+     border-top: 2px solid var(--glass-border-color);
+     border-bottom: 2px solid var(--glass-border-color);
+     border-radius: 12px;
 
      padding: 48px 64px;
 
