@@ -6,6 +6,6 @@
      --black-10: #0b0b0b;
      --white-100: white;
 
-     --glass-background-color: rgba(0, 0, 0, 0.35);
-     --glass-border-color: rgba(0, 0, 0, 0.12);
+     --glass-background-color: rgba(61, 61, 61, 0.35);
+     --glass-border-color: var(--white-100);
 }
