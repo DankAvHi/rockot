@@ -1,3 +1,20 @@
-## This is a repository of Rockot (Krasnodar acrobatic rock-n-roll club) site.
+## Сайт клуба акробатического рок-н-ролла Rockot Краснодар
 
-This site is created with NextJS
+---
+
+### Необходимое для запуска ПО
+
+Для запуска сайта, на компьютере должен быть установлен **Node JS**.
+Рекомендую устанавить его последнюю через NVM:
+
+-    https://github.com/nvm-sh/nvm Версия для Linux/Mac
+-    https://github.com/coreybutler/nvm-windows Версия для Windows
+
+### Запуск
+
+Сайт сделан на NextJS, для запуска:
+
+1. В корне проекта запустите терминал
+2. Выполните комманду `npm i`
+3. Выполните комманду `npm start`
+4. Запустите браузер и перейдите по адрессу `localhost:3000` (В терминале будет ссылка на этот адрес)
