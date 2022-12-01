@@ -18,6 +18,14 @@
      text-decoration: none;
      color: var(--white-100);
 }
+*::-webkit-scrollbar {
+     border-left: 1px solid var(--white-100);
+
+     background-color: var(--app-background-color);
+}
+*::-webkit-scrollbar-thumb {
+     background-color: var(--white-100);
+}
 
 a,
 button,
