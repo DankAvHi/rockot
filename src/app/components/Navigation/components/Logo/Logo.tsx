@@ -27,7 +27,7 @@ const Logo = ({ onClick }: LogoPropsType) => {
           <Link href={"/"} className={styles.Logo}>
                <Image
                     className={styles.logoImage}
-                    src={"/static/miniLogo.svg"}
+                    src={"/src/static/miniLogo.svg"}
                     width={logoImage.width}
                     height={logoImage.height}
                     alt={"Логотип клуба"}
