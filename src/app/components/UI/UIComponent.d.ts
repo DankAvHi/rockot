@@ -1,1 +1,1 @@
-type UIComponentProps = {};
+type UIComponentProps = Record<string, never>;
