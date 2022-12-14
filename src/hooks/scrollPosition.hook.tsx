@@ -1,9 +1,9 @@
 "use client";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const useScrollPosition = () => {
      const [scrollPosition, setScrollPosition] = useState(0);
-     useLayoutEffect(() => {
+     useEffect(() => {
           const updateScrollPosition = () => {
                setScrollPosition(window.pageYOffset);
           };
