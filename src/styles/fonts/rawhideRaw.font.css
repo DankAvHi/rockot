@@ -1,0 +1,8 @@
+@font-face {
+     font-family: "Rawhide Raw";
+     src: url("../../../public/fonts/RawhideRaw/RawhideRaw.otf") format("truetype");
+}
+
+:root {
+     --rawhide-raw-font: "Rawhide Raw";
+}
