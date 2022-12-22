@@ -1,6 +1,6 @@
 import Image from "next/image";
-import textStyles from "../../../styles/text.module.css";
-import Button from "../UI/Buttons/Button/Button";
+import textStyles from "../../../../styles/text.module.css";
+import Button from "../../../components/UI/Buttons/Button/Button";
 import styles from "./Header.module.css";
 import logoImage from "/public/static/logo.svg";
 

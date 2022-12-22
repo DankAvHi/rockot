@@ -1,5 +1,5 @@
 import globalStyles from "../../styles/global.module.css";
-import Header from "../components/Header/Header";
+import Header from "./components/Header/Header";
 import styles from "./home.module.css";
 
 const page = () => {
