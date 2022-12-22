@@ -127,6 +127,10 @@
      transform: scale(1.1);
 }
 
+.heroButton:active {
+     transform: scale(0.9);
+}
+
 @media screen and (max-width: 1024px) {
      .heroButton {
           font-size: 1.2rem;
