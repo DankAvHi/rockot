@@ -1,11 +1,11 @@
 :root {
-     --rockot-gradient-top: #3ee4eb;
-     --rockot-gradient-bottom: #3ea2ad;
+  --rockot-gradient-top: #3ee4eb;
+  --rockot-gradient-bottom: #3ea2ad;
 
-     --black-00: black;
-     --black-10: #0b0b0b;
-     --white-100: white;
+  --black-00: black;
+  --black-10: #0b0b0b;
+  --white-100: white;
 
-     --glass-background-color: rgba(61, 61, 61, 0.35);
-     --glass-border-color: var(--white-100);
+  --glass-background-color: rgba(61, 61, 61, 0.35);
+  --glass-border-color: var(--white-100);
 }

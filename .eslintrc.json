@@ -1,12 +1,12 @@
 {
-     "extends": [
-          "eslint:recommended",
-          "plugin:react/recommended",
-          "plugin:@typescript-eslint/recommended",
-          "plugin:react/jsx-runtime",
-          "plugin:react-hooks/recommended",
-          "next/core-web-vitals"
-     ],
-     "plugins": ["@typescript-eslint"],
-     "rules": { "react/jsx-uses-react": "off", "react/react-in-jsx-scope": "off" }
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": { "react/jsx-uses-react": "off", "react/react-in-jsx-scope": "off" }
 }

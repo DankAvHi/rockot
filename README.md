@@ -8,8 +8,8 @@
 Офф сайт: https://nodejs.org/en/
 Рекомендуется устанавить его последнюю через NVM:
 
--    https://github.com/nvm-sh/nvm Версия для Linux/Mac
--    https://github.com/coreybutler/nvm-windows Версия для Windows
+- https://github.com/nvm-sh/nvm Версия для Linux/Mac
+- https://github.com/coreybutler/nvm-windows Версия для Windows
 
 При разрботке был использован пакетный менеджер pnpm вместо стандартного npm (Устанавливается вместе с Node JS),
 можно воспользоватся стандартным, но во избежания багов используйте pnpm.

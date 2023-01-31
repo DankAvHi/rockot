@@ -4,14 +4,14 @@ import ChampionsSection from "./sections/ChampionsSection/ChampionsSection";
 import Header from "./sections/Header/Header";
 
 const page = () => {
-     return (
-          <>
-               <Header />
-               <main className={`${styles.main} ${globalStyles.rootContainer}`}>
-                    <ChampionsSection />
-               </main>
-          </>
-     );
+  return (
+    <>
+      <Header />
+      <main className={`${styles.main} ${globalStyles.rootContainer}`}>
+        <ChampionsSection />
+      </main>
+    </>
+  );
 };
 
 export default page;
