@@ -1,159 +1,159 @@
 .Header {
-  padding: 48px 12px;
+    padding: 48px 12px;
 
-  min-height: calc(100vh - 77px);
+    min-height: calc(100vh - 77px);
 
-  background: url("./assets/background.jpg");
-  background-position: center center;
+    background: url("./assets/background.jpg");
+    background-position: center center;
 
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
-  animation: shadow 10s ease-in-out infinite;
+    animation: shadow 10s ease-in-out infinite;
 }
 
 @media screen and (max-width: 1024px) {
-  .Header {
-    background: url("./assets/backgroundTablet.jpg") center no-repeat;
-    background-size: cover;
-  }
+    .Header {
+        background: url("./assets/backgroundTablet.jpg") center no-repeat;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 650px) {
-  .Header {
-    background: url("./assets/backgroundMobile.jpg") center no-repeat;
-    background-size: cover;
-  }
+    .Header {
+        background: url("./assets/backgroundMobile.jpg") center no-repeat;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .Header {
-    min-height: 100vh;
-  }
+    .Header {
+        min-height: 100vh;
+    }
 }
 
 @keyframes shadow {
-  0% {
-    filter: saturate(1);
-  }
-  50% {
-    filter: saturate(1.5);
-  }
-  100% {
-    filter: saturate(1);
-  }
+    0% {
+        filter: saturate(1);
+    }
+    50% {
+        filter: saturate(1.5);
+    }
+    100% {
+        filter: saturate(1);
+    }
 }
 
 .content {
-  transition: 0.4s;
+    transition: 0.4s;
 
-  border-top: 2px solid var(--glass-border-color);
-  border-bottom: 2px solid var(--glass-border-color);
-  border-radius: 12px;
+    border-top: 2px solid var(--glass-border-color);
+    border-bottom: 2px solid var(--glass-border-color);
+    border-radius: 12px;
 
-  padding: 48px 64px;
+    padding: 48px 64px;
 
-  backdrop-filter: blur(8px);
-  background-color: var(--glass-background-color);
+    backdrop-filter: blur(8px);
+    background-color: var(--glass-background-color);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 @media screen and (max-width: 1024px) {
-  .content {
-    gap: 24px;
-  }
+    .content {
+        gap: 24px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .content {
-    padding: 32px 18px;
-  }
+    .content {
+        padding: 32px 18px;
+    }
 }
 
 .content:hover {
-  backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
 
 .logo {
-  max-width: 920px;
-  max-height: 146px;
-  width: 100%;
-  height: 100%;
+    max-width: 920px;
+    max-height: 146px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
-  .logo {
-    max-width: 520px;
-    max-height: 82px;
-  }
+    .logo {
+        max-width: 520px;
+        max-height: 82px;
+    }
 }
 
 .hiddenHeading {
-  position: absolute;
-  visibility: hidden;
+    position: absolute;
+    visibility: hidden;
 }
 
 .heading {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .heading {
-    font-size: 1.5rem;
-  }
+    .heading {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .heading {
-    font-size: 1.2rem;
-  }
+    .heading {
+        font-size: 1.2rem;
+    }
 }
 
 .heroButton {
-  transition: 0.4s;
+    transition: 0.4s;
 
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .heroButton:hover {
-  box-shadow: 0 0 20px var(--rockot-gradient-top);
-
-  transform: scale(1.1);
-}
-
-.heroButton:active {
-  transform: scale(0.9);
-}
-
-@media screen and (max-width: 1024px) {
-  .heroButton {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .heroButton:hover {
-    box-shadow: none;
-
-    transform: none;
-  }
-
-  .heroButton:active {
     box-shadow: 0 0 20px var(--rockot-gradient-top);
 
     transform: scale(1.1);
-  }
+}
+
+.heroButton:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 1024px) {
+    .heroButton {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroButton:hover {
+        box-shadow: none;
+
+        transform: none;
+    }
+
+    .heroButton:active {
+        box-shadow: 0 0 20px var(--rockot-gradient-top);
+
+        transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .heroButton {
-    font-size: 1rem;
-    font-weight: 300;
-  }
+    .heroButton {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 }

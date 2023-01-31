@@ -1,59 +1,59 @@
 .Navigation {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
-  border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 
-  background-color: var(--app-background-color);
+    background-color: var(--app-background-color);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Navigation_opacity {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 @media screen and (max-width: 425px) {
-  .Navigation {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    .Navigation {
+        position: fixed;
+        top: 10px;
+        right: 10px;
 
-    border: none;
+        border: none;
 
-    background-color: transparent;
+        background-color: transparent;
 
-    justify-content: flex-end;
-  }
+        justify-content: flex-end;
+    }
 }
 
 .container {
-  padding: 8px 12px;
+    padding: 8px 12px;
 
-  max-width: 1440px;
-  width: 100%;
+    max-width: 1440px;
+    width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 425px) {
-  .container {
-    border-radius: 12px;
+    .container {
+        border-radius: 12px;
 
-    padding: 10px;
+        padding: 10px;
 
-    background-color: var(--app-background-color);
-    opacity: 0.75;
+        background-color: var(--app-background-color);
+        opacity: 0.75;
 
-    flex-direction: row-reverse;
-  }
+        flex-direction: row-reverse;
+    }
 
-  .container_open {
-    opacity: 1;
+    .container_open {
+        opacity: 1;
 
-    gap: 12px;
-  }
+        gap: 12px;
+    }
 }
