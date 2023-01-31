@@ -7,6 +7,10 @@ const nextConfig = {
         appDir: true,
     },
 
+    compiler: {
+        styledComponents: true,
+    },
+
     async redirects() {
         return [
             {
