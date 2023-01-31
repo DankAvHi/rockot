@@ -1,13 +1,13 @@
 @font-face {
-     font-family: "Century Gothic";
-     src: url("../../../public/fonts/CenturyGothic/centurygothic.ttf");
+    font-family: "Century Gothic";
+    src: url("../../../public/fonts/CenturyGothic/centurygothic.ttf");
 }
 @font-face {
-     font-family: "Century Gothic";
-     src: url("../../../public/fonts/CenturyGothic/centurygothic_bold.ttf");
-     font-weight: 700;
+    font-family: "Century Gothic";
+    src: url("../../../public/fonts/CenturyGothic/centurygothic_bold.ttf");
+    font-weight: 700;
 }
 
 :root {
-     --century-gothic-font: "Century Gothic";
+    --century-gothic-font: "Century Gothic";
 }
