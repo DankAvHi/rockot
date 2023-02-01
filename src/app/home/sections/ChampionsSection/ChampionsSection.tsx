@@ -1,32 +1,36 @@
-import textStyles from "../../../../styles/text.module.css";
-import styles from "./ChampionsSection.module.css";
+import {
+    Container,
+    Heading,
+    ImageWrapper,
+    List,
+    ListItem,
+    LogoText,
+    Paragraph,
+    StyledChampionsSection,
+} from "./ChampionsSection.styles";
 import ChampionsSectionText from "./ChampionsSection.text";
 
 const ChampionsSection = () => {
     return (
-        <section className={styles.ChampionsSection}>
-            <div className={styles.text}>
-                <h2 className={styles.heading}>{ChampionsSectionText.heading}</h2>
-                <p className={styles.paragraph}>
+        <StyledChampionsSection>
+            <Container>
+                <Heading>{ChampionsSectionText.heading}</Heading>
+                <Paragraph>
                     {ChampionsSectionText.paragraph1.text1}
-                    <span className={`${textStyles.accientText} ${styles.logoText}`}>
-                        {ChampionsSectionText.paragraph1.logoText1}
-                    </span>
+                    <LogoText>{ChampionsSectionText.paragraph1.logoText1}</LogoText>
                     {ChampionsSectionText.paragraph1.text2}
-                </p>
-                <p className={styles.paragraph}>{ChampionsSectionText.paragraph2}</p>
-                <p className={styles.paragraph}>{ChampionsSectionText.paragraph3}</p>
-                <ul className={styles.list}>
+                </Paragraph>
+                <Paragraph>{ChampionsSectionText.paragraph2}</Paragraph>
+                <Paragraph>{ChampionsSectionText.paragraph3}</Paragraph>
+                <List>
                     {ChampionsSectionText.list1.map((item) => (
-                        <li className={styles.listItem} key={item}>
-                            {item}
-                        </li>
+                        <ListItem key={item}>{item}</ListItem>
                     ))}
-                </ul>
-            </div>
+                </List>
+            </Container>
 
-            <div className={styles.imageWrapper}></div>
-        </section>
+            <ImageWrapper />
+        </StyledChampionsSection>
     );
 };
 

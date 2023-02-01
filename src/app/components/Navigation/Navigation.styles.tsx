@@ -1,21 +1,22 @@
-.Navigation {
+import styled from "styled-components";
+import stylesVariables from "../../../styles/variables.styles";
+
+export const StyledNavigation = styled.nav<{ $opacity: boolean }>`
     position: sticky;
     top: 0;
     z-index: 1;
 
     border-bottom: 1px solid #ffffff;
 
-    background-color: var(--app-background-color);
+    background-color: ${stylesVariables.appBackgroundColor};
 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.Navigation_opacity {
-    opacity: 0.9;
-}
-@media screen and (max-width: 425px) {
-    .Navigation {
+
+    ${(props) => (props.$opacity ? "opacity: 0.9;" : "")}
+
+    @media screen and (max-width: 425px) {
         position: fixed;
         top: 10px;
         right: 10px;
@@ -26,9 +27,9 @@
 
         justify-content: flex-end;
     }
-}
+`;
 
-.container {
+export const Container = styled.div<{ $open: boolean }>`
     padding: 8px 12px;
 
     max-width: 1440px;
@@ -37,23 +38,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-@media screen and (max-width: 425px) {
-    .container {
+    @media screen and (max-width: 425px) {
         border-radius: 12px;
 
         padding: 10px;
 
-        background-color: var(--app-background-color);
+        background-color: ${stylesVariables.appBackgroundColor};
         opacity: 0.75;
 
         flex-direction: row-reverse;
-    }
 
-    .container_open {
-        opacity: 1;
-
-        gap: 12px;
+        ${(props) => (props.$open ? `{opacity: 1; gap: 12px;}` : "")}
     }
-}
+`;

@@ -1,5 +1,5 @@
-import globalStyles from "../../styles/global.module.css";
-import styles from "./home.module.css";
+"use client";
+import { Main } from "./home.styles";
 import ChampionsSection from "./sections/ChampionsSection/ChampionsSection";
 import Header from "./sections/Header/Header";
 
@@ -7,9 +7,9 @@ const page = () => {
     return (
         <>
             <Header />
-            <main className={`${styles.main} ${globalStyles.rootContainer}`}>
+            <Main>
                 <ChampionsSection />
-            </main>
+            </Main>
         </>
     );
 };

@@ -1,5 +1,5 @@
 import Link from "./components/Link/Link";
-import styles from "./List.module.css";
+import { StyledList } from "./List.styles";
 
 type ListPropsType = {
     sitePages: {
@@ -13,7 +13,7 @@ type ListPropsType = {
 
 const List = ({ sitePages, isNavigationOpen, linkOnClick }: ListPropsType) => {
     return (
-        <ul className={`${styles.List} ${isNavigationOpen ? styles.List_open : ""}`}>
+        <StyledList $open={isNavigationOpen}>
             {sitePages.map((sitePage) => (
                 <Link
                     linkOnClick={linkOnClick}
@@ -22,7 +22,7 @@ const List = ({ sitePages, isNavigationOpen, linkOnClick }: ListPropsType) => {
                     sitePage={sitePage}
                 />
             ))}
-        </ul>
+        </StyledList>
     );
 };
 

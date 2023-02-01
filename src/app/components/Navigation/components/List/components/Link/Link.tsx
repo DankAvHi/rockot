@@ -1,7 +1,5 @@
-"use client";
-import NextLink from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./Link.module.css";
+import { StyledLink, StyledNextLink } from "./Link.styles";
 
 type LinkProps = {
     sitePage: {
@@ -15,18 +13,18 @@ type LinkProps = {
 
 const Link = ({ sitePage, isNavigationOpen, linkOnClick }: LinkProps) => {
     const pathname = usePathname();
+
     return (
-        <li className={styles.Link}>
-            <NextLink
+        <StyledLink>
+            <StyledNextLink
                 onClick={linkOnClick}
                 href={sitePage.href}
-                className={`${styles.link} ${pathname === sitePage.href && styles.link_active} ${
-                    isNavigationOpen && styles.link_open
-                }`}
+                $active={pathname === sitePage.href}
+                $open={isNavigationOpen}
             >
                 {sitePage.linkText}
-            </NextLink>
-        </li>
+            </StyledNextLink>
+        </StyledLink>
     );
 };
 
