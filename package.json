@@ -12,8 +12,8 @@
     },
     "dependencies": {
         "@react-spring/web": "^9.6.1",
-        "@typescript-eslint/eslint-plugin": "^5.49.0",
-        "@typescript-eslint/parser": "^5.49.0",
+        "@typescript-eslint/eslint-plugin": "^5.50.0",
+        "@typescript-eslint/parser": "^5.50.0",
         "next": "^13.1.6",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
