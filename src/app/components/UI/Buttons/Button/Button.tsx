@@ -1,31 +1,27 @@
 import Link from "next/link";
-import styles from "./Button.module.css";
+import { CustomButtonProps } from "../Button";
 
-const Button = (props: ButtonProps | AnchorProps) => {
+const Button = (props: CustomButtonProps) => {
     if (props.type === "link") {
-        if (props.disabled) {
-            return (
-                <button className={`${styles.Button} ${props.className}`} disabled={true}>
-                    {props.children}
-                </button>
-            );
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const { type: _, external, ...anchorProps } = props;
+        const { children, disabled, href } = anchorProps;
+
+        if (disabled) {
+            return <button disabled={true}>{children}</button>;
         } else {
-            props.external ? (
-                <a href={props.href} className={`${styles.Button} ${props.className}`}>
-                    {props.children}
-                </a>
+            return external ? (
+                <a {...anchorProps}>{children}</a>
             ) : (
-                <Link href={props.href || "#"} className={`${styles.Button} ${props.className}`}>
-                    {props.children}
+                <Link {...anchorProps} href={href || "#"}>
+                    {children}
                 </Link>
             );
         }
     }
-    return (
-        <button className={`${styles.Button} ${props.className}`} disabled={props.disabled}>
-            {props.children}
-        </button>
-    );
+
+    const { children } = props;
+    return <button {...props}>{children}</button>;
 };
 
 export default Button;

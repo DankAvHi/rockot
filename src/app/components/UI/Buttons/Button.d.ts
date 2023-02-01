@@ -1,10 +1,12 @@
-type ButtonProps = UIComponentProps &
-    React.HTMLProps<HTMLButtonElement> & {
+export type ButtonProps = UIComponentProps &
+    React.ComponentPropsWithoutRef<"button"> & {
         type?: "button";
     };
 
-type AnchorProps = UIComponentProps &
-    React.HTMLProps<HTMLAnchorElement> & {
+export type AnchorProps = UIComponentProps &
+    React.ComponentPropsWithoutRef<"a"> & {
         type: "link";
         external?: boolean;
     };
+
+export type CustomButtonProps = ButtonProps | AnchorProps;
