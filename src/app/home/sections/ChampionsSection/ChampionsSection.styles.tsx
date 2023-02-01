@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import textMixins from "../../../../styles/text.styles";
-import ChampionsImage from "./assets/Champions.jpg";
+import ChampionsImage from "./assets/sectionImage.jpg";
 
 export const StyledChampionsSection = styled.section`
     overflow: hidden;
