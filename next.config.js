@@ -16,10 +16,10 @@ const nextConfig = {
             {
                 source: "/",
                 destination: "/home",
-                permanent: true,,
-                  },,
-            ];;
-      },,
-};;
+                permanent: true,
+            },
+        ];
+    },
+};
 
-module.exports = nextConfig;;
+module.exports = nextConfig;
