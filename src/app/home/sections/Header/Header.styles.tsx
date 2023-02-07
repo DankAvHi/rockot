@@ -11,8 +11,10 @@ export const StyledHeader = styled.header`
 
     min-height: calc(100vh - 77px);
 
-    background: url(${desktopBackgroundImage.src});
+    background-image: url(${desktopBackgroundImage.src}) ;
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: flex-end;
@@ -21,13 +23,11 @@ export const StyledHeader = styled.header`
     animation: shadow 10s ease-in-out infinite;
 
     @media screen and (max-width: 1024px) {
-        background: url(${tabletBackgroundImage.src}) center no-repeat;
-        background-size: cover;
+        background-image: url(${tabletBackgroundImage.src}) ;
     }
 
     @media screen and (max-width: 650px) {
-        background: url(${mobileBackgroundImage.src}) center no-repeat;
-        background-size: cover;
+        background-image: url(${mobileBackgroundImage.src}); 
     }
 
     @media screen and (max-width: 425px) {
