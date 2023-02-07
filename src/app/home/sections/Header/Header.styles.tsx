@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import colors from "../../../../styles/colors.styles";
+import textMixins from "../../../../styles/text.styles";
 import desktopBackgroundImage from "./assets/background.jpg";
 import mobileBackgroundImage from "./assets/backgroundMobile.jpg";
 import tabletBackgroundImage from "./assets/backgroundTablet.jpg";
@@ -104,4 +105,8 @@ export const Heading = styled.h2`
     @media screen and (max-width: 425px) {
         font-size: 1.2rem;
     }
+`;
+
+export const AccientText = styled.span`
+    ${textMixins.accientTextMixin}
 `;
