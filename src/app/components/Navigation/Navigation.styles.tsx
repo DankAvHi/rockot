@@ -29,7 +29,7 @@ export const StyledNavigation = styled.nav<{ $opacity: boolean }>`
     }
 `;
 
-export const Container = styled.div<{ $open: boolean }>`
+export const Container = styled.div`
     padding: 8px 12px;
 
     max-width: 1440px;
@@ -40,15 +40,6 @@ export const Container = styled.div<{ $open: boolean }>`
     align-items: center;
 
     @media screen and (max-width: 425px) {
-        border-radius: 12px;
-
-        padding: 10px;
-
-        background-color: ${stylesVariables.appBackgroundColor};
-        opacity: 0.75;
-
-        flex-direction: row-reverse;
-
-        ${(props) => (props.$open ? `{opacity: 1; gap: 12px;}` : "")}
+       display: none;
     }
 `;
