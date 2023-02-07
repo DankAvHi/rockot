@@ -1,4 +1,3 @@
-import AccientButton from "../../../components/UI/Buttons/AccientButton/AccientButton";
 import { AccientText, Content, Heading, HidenHeading, Logo, StyledHeader } from "./Header.styles";
 import HeaderText from "./Header.text";
 import logoImage from "/public/static/logo.svg";
@@ -20,7 +19,6 @@ const Header = () => {
                     <AccientText>{HeaderText.subHeading.accientText1}</AccientText>
                     {HeaderText.subHeading.text2}
                 </Heading>
-                <AccientButton>{HeaderText.heroButton}</AccientButton>
             </Content>
         </StyledHeader>
     );

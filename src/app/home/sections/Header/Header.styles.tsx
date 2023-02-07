@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
 import colors from "../../../../styles/colors.styles";
-import textMixins from "../../../../styles/text.styles";
 import desktopBackgroundImage from "./assets/background.jpg";
 import mobileBackgroundImage from "./assets/backgroundMobile.jpg";
 import tabletBackgroundImage from "./assets/backgroundTablet.jpg";
@@ -11,7 +10,7 @@ export const StyledHeader = styled.header`
 
     min-height: calc(100vh - 77px);
 
-    background-image: url(${desktopBackgroundImage.src}) ;
+    background-image: url(${desktopBackgroundImage.src});
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,11 +22,11 @@ export const StyledHeader = styled.header`
     animation: shadow 10s ease-in-out infinite;
 
     @media screen and (max-width: 1024px) {
-        background-image: url(${tabletBackgroundImage.src}) ;
+        background-image: url(${tabletBackgroundImage.src});
     }
 
     @media screen and (max-width: 650px) {
-        background-image: url(${mobileBackgroundImage.src}); 
+        background-image: url(${mobileBackgroundImage.src});
     }
 
     @media screen and (max-width: 425px) {
@@ -105,8 +104,4 @@ export const Heading = styled.h2`
     @media screen and (max-width: 425px) {
         font-size: 1.2rem;
     }
-`;
-
-export const AccientText = styled.span`
-    ${textMixins.accientTextMixin}
 `;
