@@ -4,11 +4,12 @@
 
 ---
 
-1. [Project Description](#)
-2. [Required Software for Startup and Development](#)
-3. [Environment preparation and launch](#)
-4. [Technologies used in the project](#)
-5. [Authorship and other information](#)
+1. [Project Description](#description-of-the-project)
+2. [Required Software for Startup and Development](#required-software-to-run-and-develop)
+3. [Environment preparation and launch](#preparing-the-environment-and-running)
+4. [Scripts using in development](#scripts-using-in-development)
+5. [Technologies used in the project](#technologies-used-in-the-project)
+6. [Authorship and other information](#authorship-and-other-information)
 
 ---
 
@@ -48,7 +49,7 @@ Site of the acrobatic rock and roll club Rockot Krasnodar
         - If using the Visual Studio Code, press `F5` or run from the **Running and Debugging** section
         - Or Enter the command `pnpm run dev`
 
-## Scripts to run in the terminal
+## Scripts using in development
 
 1. Run in development mode: `pnpm run dev`
 2. Start in Production mode: `pnpm start`
