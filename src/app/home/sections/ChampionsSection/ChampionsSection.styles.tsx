@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fontsNames } from "../../../../styles/fonts/index.font";
 import textMixins from "../../../../styles/text.styles";
 import sectionImage from "./assets/sectionImage.jpg";
 
@@ -37,7 +38,7 @@ export const Heading = styled.h2`
 export const Paragraph = styled.p``;
 
 export const LogoText = styled.span`
-    font-family: var(--rawhide-raw-font);
+    font-family: ${fontsNames.rawhideRawFontName};
     ${textMixins.accientTextMixin}
 `;
 
