@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../../../styles/colors.styles";
 import { fontsNames } from "../../../../styles/fonts/index.font";
 import textMixins from "../../../../styles/text.styles";
 import ChampionsImage from "./assets/sectionImage.jpg";
@@ -12,7 +13,7 @@ export const StyledChampionsSection = styled.section`
     display: flex;
     align-items: flex-start;
 
-    background-color: var(--black-00);
+    background-color: ${colors.black00};
 
     box-shadow: 0px 0px 32px -16px #ffffff;
 
@@ -63,7 +64,7 @@ export const ImageWrapper = styled.div`
     background-size: cover;
     background-position: center;
 
-    box-shadow: inset 170px 0px 120px var(--black-00);
+    box-shadow: inset 170px 0px 120px ${colors.black00};
 
     @media screen and (max-width: 1024px) {
         background-position: center;
