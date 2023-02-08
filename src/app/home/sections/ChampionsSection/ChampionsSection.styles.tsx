@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import textMixins from "../../../../styles/text.styles";
-import ChampionsImage from "./assets/Champions.jpg";
+import sectionImage from "./assets/sectionImage.jpg";
 
 export const StyledChampionsSection = styled.section`
     overflow: hidden;
@@ -57,7 +57,7 @@ export const ImageWrapper = styled.div`
     width: 100%;
     height: 427px;
 
-    background: url(${ChampionsImage.src});
+    background: url(${sectionImage.src});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
