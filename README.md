@@ -1,3 +1,5 @@
+> Версия на русском языке: [Перейти](README.RUS.md)
+
 # Website of the acrobatic rock and roll club Rockot Krasnodar
 
 ## Content
