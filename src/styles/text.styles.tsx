@@ -1,7 +1,8 @@
 import { css } from "styled-components";
+import colors from "./colors.styles";
 
 export const accientTextMixin = css`
-    color: var(--rockot-gradient-top);
+    color: ${colors.rockotGradientTop};
 `;
 
 const textMixins = { accientTextMixin };

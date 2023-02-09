@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import colors from "../../../../styles/colors.styles";
+import { fontsNames } from "../../../../styles/fonts/index.font";
 import textMixins from "../../../../styles/text.styles";
-import ChampionsImage from "./assets/sectionImage.jpg";
+import sectionImage from "./assets/sectionImage.jpg";
 
 export const StyledChampionsSection = styled.section`
     overflow: hidden;
@@ -11,7 +13,7 @@ export const StyledChampionsSection = styled.section`
     display: flex;
     align-items: flex-start;
 
-    background-color: var(--black-00);
+    background-color: ${colors.black00};
 
     box-shadow: 0px 0px 32px -16px #ffffff;
 
@@ -37,7 +39,7 @@ export const Heading = styled.h2`
 export const Paragraph = styled.p``;
 
 export const LogoText = styled.span`
-    font-family: var(--rawhide-raw-font);
+    font-family: ${fontsNames.rawhideRawFontName};
     ${textMixins.accientTextMixin}
 `;
 
@@ -57,12 +59,12 @@ export const ImageWrapper = styled.div`
     width: 100%;
     height: 427px;
 
-    background: url(${ChampionsImage.src});
+    background: url(${sectionImage.src});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    box-shadow: inset 170px 0px 120px var(--black-00);
+    box-shadow: inset 170px 0px 120px ${colors.black00};
 
     @media screen and (max-width: 1024px) {
         background-position: center;
