@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
 
     min-height: calc(100vh - 77px);
 
-    background-image-image: url(${desktopBackgroundImage.src});
+    background-image: url(${desktopBackgroundImage.src});
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
