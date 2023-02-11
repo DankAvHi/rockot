@@ -2,8 +2,6 @@ import {
     Container,
     Heading,
     ImageWrapper,
-    List,
-    ListItem,
     LogoText,
     Paragraph,
     StyledChampionsSection,
