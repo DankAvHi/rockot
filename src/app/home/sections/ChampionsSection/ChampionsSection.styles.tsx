@@ -53,8 +53,6 @@ export const ImageWrapper = styled.div`
     background-size: cover;
     background-position: center;
 
-    box-shadow: inset 170px 0px 120px ${colors.black00};
-
     @media screen and (max-width: 1024px) {
         background-position: center;
 
