@@ -19,12 +19,6 @@ const ChampionsSection = () => {
                     {ChampionsSectionText.paragraph1.text2}
                 </Paragraph>
                 <Paragraph>{ChampionsSectionText.paragraph2}</Paragraph>
-                <Paragraph>{ChampionsSectionText.paragraph3}</Paragraph>
-                <List>
-                    {ChampionsSectionText.list1.map((item) => (
-                        <ListItem key={item}>{item}</ListItem>
-                    ))}
-                </List>
             </Container>
 
             <ImageWrapper />
