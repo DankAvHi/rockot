@@ -43,17 +43,6 @@ export const LogoText = styled.span`
     ${textMixins.accientTextMixin}
 `;
 
-export const List = styled.ul`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-`;
-
-export const ListItem = styled.li`
-    list-style: inside;
-`;
-
 export const ImageWrapper = styled.div`
     max-width: 640px;
     width: 100%;
