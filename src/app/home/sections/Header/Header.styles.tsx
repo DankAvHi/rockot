@@ -6,107 +6,109 @@ import desktopBackgroundImage from "./assets/background.jpg";
 import mobileBackgroundImage from "./assets/backgroundMobile.jpg";
 import tabletBackgroundImage from "./assets/backgroundTablet.jpg";
 
-export const StyledHeader = styled.header`
-    padding: 48px 12px;
+export const HeaderStyles = {
+    Header: styled.header`
+        padding: 48px 12px;
 
-    min-height: calc(100vh - 77px);
+        min-height: calc(100vh - 77px);
 
-    background-image: url(${desktopBackgroundImage.src});
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        background-image: url(${desktopBackgroundImage.src});
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
 
-    animation: shadow 10s ease-in-out infinite;
+        animation: shadow 10s ease-in-out infinite;
 
-    @media screen and (max-width: 1024px) {
-        background-image: url(${tabletBackgroundImage.src});
-    }
-
-    @media screen and (max-width: 650px) {
-        background-image: url(${mobileBackgroundImage.src});
-    }
-
-    @media screen and (max-width: 425px) {
-        min-height: 100vh;
-    }
-
-    @keyframes shadow {
-        0% {
-            filter: saturate(1);
+        @media screen and (max-width: 1024px) {
+            background-image: url(${tabletBackgroundImage.src});
         }
-        50% {
-            filter: saturate(1.5);
+
+        @media screen and (max-width: 650px) {
+            background-image: url(${mobileBackgroundImage.src});
         }
-        100% {
-            filter: saturate(1);
+
+        @media screen and (max-width: 425px) {
+            min-height: 100vh;
         }
-    }
-`;
 
-export const Content = styled.div`
-    transition: 0.4s;
+        @keyframes shadow {
+            0% {
+                filter: saturate(1);
+            }
+            50% {
+                filter: saturate(1.5);
+            }
+            100% {
+                filter: saturate(1);
+            }
+        }
+    `,
 
-    border-top: 2px solid ${colors.glassBorderColor};
-    border-bottom: 2px solid ${colors.glassBorderColor};
-    border-radius: 12px;
+    Content: styled.div`
+        transition: 0.4s;
 
-    padding: 48px 64px;
+        border-top: 2px solid ${colors.glassBorderColor};
+        border-bottom: 2px solid ${colors.glassBorderColor};
+        border-radius: 12px;
 
-    backdrop-filter: blur(8px);
-    background-color: ${colors.glassBackgroundColor};
+        padding: 48px 64px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+        backdrop-filter: blur(8px);
+        background-color: ${colors.glassBackgroundColor};
 
-    @media screen and (max-width: 1024px) {
-        gap: 24px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
 
-    @media screen and (max-width: 425px) {
-        padding: 32px 18px;
-    }
+        @media screen and (max-width: 1024px) {
+            gap: 24px;
+        }
 
-    &:hover {
-        backdrop-filter: blur(15px);
-    }
-`;
+        @media screen and (max-width: 425px) {
+            padding: 32px 18px;
+        }
 
-export const Logo = styled(Image)`
-    max-width: 920px;
-    max-height: 146px;
-    width: 100%;
-    height: 100%;
+        &:hover {
+            backdrop-filter: blur(15px);
+        }
+    `,
 
-    @media screen and (max-width: 1024px) {
-        max-width: 520px;
-        max-height: 82px;
-    }
-`;
+    Logo: styled(Image)`
+        max-width: 920px;
+        max-height: 146px;
+        width: 100%;
+        height: 100%;
 
-export const HidenHeading = styled.h1`
-    position: absolute;
-    visibility: hidden;
-`;
+        @media screen and (max-width: 1024px) {
+            max-width: 520px;
+            max-height: 82px;
+        }
+    `,
 
-export const Heading = styled.h2`
-    font-size: 2rem;
+    HidenHeading: styled.h1`
+        position: absolute;
+        visibility: hidden;
+    `,
 
-    @media screen and (max-width: 1024px) {
-        font-size: 1.5rem;
-    }
+    Heading: styled.h2`
+        font-size: 2rem;
 
-    @media screen and (max-width: 425px) {
-        font-size: 1.2rem;
-    }
-`;
+        @media screen and (max-width: 1024px) {
+            font-size: 1.5rem;
+        }
 
-export const AccientText = styled.span`
-    ${textMixins.accientTextMixin}
-`;
+        @media screen and (max-width: 425px) {
+            font-size: 1.2rem;
+        }
+    `,
+
+    AccientText: styled.span`
+        ${textMixins.accientTextMixin}
+    `,
+};
