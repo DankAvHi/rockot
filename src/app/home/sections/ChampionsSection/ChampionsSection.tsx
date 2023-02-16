@@ -1,28 +1,21 @@
-import {
-    Container,
-    Heading,
-    ImageWrapper,
-    LogoText,
-    Paragraph,
-    StyledChampionsSection,
-} from "./ChampionsSection.styles";
+import { ChampionsSectionStyles as S } from "./ChampionsSection.styles";
 import ChampionsSectionText from "./ChampionsSection.text";
 
 const ChampionsSection = () => {
     return (
-        <StyledChampionsSection>
-            <Container>
-                <Heading>{ChampionsSectionText.heading}</Heading>
-                <Paragraph>
+        <S.ChampionsSection>
+            <S.Container>
+                <S.Heading>{ChampionsSectionText.heading}</S.Heading>
+                <S.Paragraph>
                     {ChampionsSectionText.paragraph1.text1}
-                    <LogoText>{ChampionsSectionText.paragraph1.logoText1}</LogoText>
+                    <S.LogoText>{ChampionsSectionText.paragraph1.logoText1}</S.LogoText>
                     {ChampionsSectionText.paragraph1.text2}
-                </Paragraph>
-                <Paragraph>{ChampionsSectionText.paragraph2}</Paragraph>
-            </Container>
+                </S.Paragraph>
+                <S.Paragraph>{ChampionsSectionText.paragraph2}</S.Paragraph>
+            </S.Container>
 
-            <ImageWrapper />
-        </StyledChampionsSection>
+            <S.ImageWrapper />
+        </S.ChampionsSection>
     );
 };
 

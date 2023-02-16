@@ -1,5 +1,5 @@
 "use client";
-import { Main } from "./home.styles";
+import { HomeStyles as S } from "./home.styles";
 import ChampionsSection from "./sections/ChampionsSection/ChampionsSection";
 import Header from "./sections/Header/Header";
 
@@ -7,9 +7,9 @@ const page = () => {
     return (
         <>
             <Header />
-            <Main>
+            <S.Main>
                 <ChampionsSection />
-            </Main>
+            </S.Main>
         </>
     );
 };
