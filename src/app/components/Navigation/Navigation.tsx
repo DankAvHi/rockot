@@ -1,16 +1,16 @@
 import useScrollPosition from "../../../hooks/scrollPosition.hook";
 import Logo from "./components/Logo/Logo";
-import { Container, StyledNavigation } from "./Navigation.styles";
+import { NavigationStyles as S } from "./Navigation.styles";
 
 const Navigation = () => {
     const scroll = useScrollPosition();
 
     return (
-        <StyledNavigation $opacity={scroll > 10}>
-            <Container>
+        <S.Navigation $opacity={scroll > 10}>
+            <S.Container>
                 <Logo />
-            </Container>
-        </StyledNavigation>
+            </S.Container>
+        </S.Navigation>
     );
 };
 
