@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import colors from "../../../../../styles/colors.styles";
+import colors from "../../../../styles/colors.styles";
 import Button from "../../../UI/Buttons/Button/Button";
 
 export const StyledLogo = styled(Button)`

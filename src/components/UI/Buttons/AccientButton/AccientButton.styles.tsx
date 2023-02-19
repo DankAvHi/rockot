@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "../../../../../styles/colors.styles";
+import colors from "../../../../styles/colors.styles";
 import Button from "../Button/Button";
 
 export const StyledAccientButton = styled(Button)`
