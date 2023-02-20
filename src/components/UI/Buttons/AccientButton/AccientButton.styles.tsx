@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import colors from "../../../../styles/colors.styles";
-import Button from "../Button/Button";
+import { Button } from "../Button";
 
 export const StyledAccientButton = styled(Button)`
     transition: 0.4s;
