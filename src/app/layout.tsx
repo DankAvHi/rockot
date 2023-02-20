@@ -1,8 +1,8 @@
 "use client";
+import { Navigation } from "../components";
 import GlobalStyles from "../styles/index.styles";
 import StyledComponentsRegistry from "../styles/registry";
 import Footer from "../components/Footer/Footer";
-import Navigation from "../components/Navigation/Navigation";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
