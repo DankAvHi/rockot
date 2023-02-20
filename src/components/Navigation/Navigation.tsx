@@ -2,7 +2,7 @@ import useScrollPosition from "../../hooks/scrollPosition.hook";
 import Logo from "./components/Logo/Logo";
 import { Container, StyledNavigation } from "./Navigation.styles";
 
-const Navigation = () => {
+export const Navigation = () => {
     const scroll = useScrollPosition();
 
     return (
@@ -13,5 +13,3 @@ const Navigation = () => {
         </StyledNavigation>
     );
 };
-
-export default Navigation;
