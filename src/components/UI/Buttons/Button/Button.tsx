@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { CustomButtonProps } from "../Button";
+import { CustomButtonProps } from "../ButtonTypes";
 
-const Button = (props: CustomButtonProps) => {
+export const Button = (props: CustomButtonProps) => {
     if (props.type === "link") {
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { type: _, external, ...anchorProps } = props;
@@ -23,5 +23,3 @@ const Button = (props: CustomButtonProps) => {
     const { children } = props;
     return <button {...props}>{children}</button>;
 };
-
-export default Button;
