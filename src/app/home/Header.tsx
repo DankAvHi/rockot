@@ -5,6 +5,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Content>
+                <Logo alt={"Логотип клуба"} />
                 <HidenHeading>{HeaderText.mainHeading}</HidenHeading>
                 <Heading>
                     {HeaderText.subHeading.text1}
