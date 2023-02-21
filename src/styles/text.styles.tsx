@@ -5,6 +5,4 @@ export const accientTextMixin = css`
     color: ${colors.rockotGradientTop};
 `;
 
-const textMixins = { accientTextMixin };
-
-export default textMixins;
+export const textMixins = { accientTextMixin };

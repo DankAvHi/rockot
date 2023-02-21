@@ -14,6 +14,4 @@ export const centuryGothicFontMixin = css`
 
 export const centuryGothicFontName = "Century Gothic";
 
-const centuryGothicFont = { name: centuryGothicFontName, mixin: centuryGothicFontMixin };
-
-export default centuryGothicFont;
+export const centuryGothicFont = { name: centuryGothicFontName, mixin: centuryGothicFontMixin };
