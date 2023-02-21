@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { LogoMin } from "@assets";
-import { Button } from "../UI";
 import { colors } from "@styles";
+import { Button } from "../UI";
 
 export const StyledLogo = styled(Button)`
     border-radius: 100%;
