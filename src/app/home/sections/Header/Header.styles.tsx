@@ -11,6 +11,7 @@ export const HeaderStyles = {
         padding: 48px 12px;
 
         min-height: calc(100vh - 77px);
+        min-height: calc(100svh - 77px);
 
         background-image: url(${desktopBackgroundImage.src});
         background-position: center center;
@@ -33,6 +34,7 @@ export const HeaderStyles = {
 
         @media screen and (max-width: 425px) {
             min-height: 100vh;
+            min-height: 100svh;
         }
 
         @keyframes shadow {
