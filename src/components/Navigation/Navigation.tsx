@@ -1,5 +1,5 @@
 import useScrollPosition from "../../hooks/scrollPosition.hook";
-import Logo from "./components/Logo/Logo";
+import { Logo } from "./Logo";
 import { Container, StyledNavigation } from "./Navigation.styles";
 
 export const Navigation = () => {

@@ -1,7 +1,7 @@
-import Image from "next/image";
 import styled from "styled-components";
-import colors from "../../../../styles/colors.styles";
-import Button from "../../../UI/Buttons/Button/Button";
+import { LogoMin } from "@/assets";
+import { Button } from "@/components";
+import { colors } from "@/styles";
 
 export const StyledLogo = styled(Button)`
     border-radius: 100%;
@@ -12,7 +12,7 @@ export const StyledLogo = styled(Button)`
     height: 60px;
 `;
 
-export const LogoImage = styled(Image)`
+export const LogoImage = styled(LogoMin)`
     border-radius: 100%;
 
     width: 60px;
