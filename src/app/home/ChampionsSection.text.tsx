@@ -1,4 +1,4 @@
-const ChampionsSectionText = {
+export const ChampionsSectionText = {
     heading: "Клуб чемпионов!",
     paragraph1: {
         text1: "Клуб ",
@@ -8,5 +8,3 @@ const ChampionsSectionText = {
     paragraph2:
         "Наши спортсмены чаще других получают призовые места. Мы выступаем на самых крупных турнирах, чемпионатах, и первенствах.",
 };
-
-export default ChampionsSectionText;

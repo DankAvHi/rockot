@@ -1,17 +1,13 @@
-import Image from "next/image";
 import styled from "styled-components";
-import colors from "../../../../styles/colors.styles";
-import textMixins from "../../../../styles/text.styles";
-import desktopBackgroundImage from "./assets/background.jpg";
-import mobileBackgroundImage from "./assets/backgroundMobile.jpg";
-import tabletBackgroundImage from "./assets/backgroundTablet.jpg";
+import { HeaderBackground, HeaderBackgroundMobile, HeaderBackgroundTablet, Logo as LogoImage } from "@/assets";
+import { colors, textMixins } from "@/styles";
 
 export const StyledHeader = styled.header`
     padding: 48px 12px;
 
     min-height: calc(100vh - 77px);
 
-    background-image: url(${desktopBackgroundImage.src});
+    background-image: url(${HeaderBackground.src});
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,11 +19,11 @@ export const StyledHeader = styled.header`
     animation: shadow 10s ease-in-out infinite;
 
     @media screen and (max-width: 1024px) {
-        background-image: url(${tabletBackgroundImage.src});
+        background-image: url(${HeaderBackgroundTablet.src});
     }
 
     @media screen and (max-width: 650px) {
-        background-image: url(${mobileBackgroundImage.src});
+        background-image: url(${HeaderBackgroundMobile.src});
     }
 
     @media screen and (max-width: 425px) {
@@ -78,7 +74,7 @@ export const Content = styled.div`
     }
 `;
 
-export const Logo = styled(Image)`
+export const Logo = styled(LogoImage)`
     max-width: 920px;
     max-height: 146px;
     width: 100%;

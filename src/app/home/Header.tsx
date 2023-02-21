@@ -1,18 +1,10 @@
 import { AccientText, Content, Heading, HidenHeading, Logo, StyledHeader } from "./Header.styles";
-import HeaderText from "./Header.text";
-import logoImage from "/public/static/logo.svg";
+import { HeaderText } from "./Header.text";
 
-const Header = () => {
+export const Header = () => {
     return (
         <StyledHeader>
             <Content>
-                <Logo
-                    src={"/static/logo.svg"}
-                    width={logoImage.width}
-                    height={logoImage.height}
-                    priority={true}
-                    alt={"Логотип клуба"}
-                />
                 <HidenHeading>{HeaderText.mainHeading}</HidenHeading>
                 <Heading>
                     {HeaderText.subHeading.text1}
@@ -23,5 +15,3 @@ const Header = () => {
         </StyledHeader>
     );
 };
-
-export default Header;

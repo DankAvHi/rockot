@@ -1,4 +1,4 @@
-const HeaderText = {
+export const HeaderText = {
     mainHeading: "Rockot sports club",
     subHeading: {
         text1: "Спортивный клуб ",
@@ -6,5 +6,3 @@ const HeaderText = {
         text2: "в Краснодаре",
     },
 };
-
-export default HeaderText;

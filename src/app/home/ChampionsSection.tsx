@@ -6,9 +6,9 @@ import {
     Paragraph,
     StyledChampionsSection,
 } from "./ChampionsSection.styles";
-import ChampionsSectionText from "./ChampionsSection.text";
+import { ChampionsSectionText } from "./ChampionsSection.text";
 
-const ChampionsSection = () => {
+export const ChampionsSection = () => {
     return (
         <StyledChampionsSection>
             <Container>
@@ -25,5 +25,3 @@ const ChampionsSection = () => {
         </StyledChampionsSection>
     );
 };
-
-export default ChampionsSection;
