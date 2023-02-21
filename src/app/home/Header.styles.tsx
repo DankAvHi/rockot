@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { HeaderBackground, HeaderBackgroundMobile, HeaderBackgroundTablet, Logo as LogoImage } from "@/assets";
-import { colors, textMixins } from "@/styles";
+import { HeaderBackground, HeaderBackgroundMobile, HeaderBackgroundTablet, Logo as LogoImage } from "@assets";
+import { colors, textMixins } from "@styles";
 
 export const StyledHeader = styled.header`
     padding: 48px 12px;

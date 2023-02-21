@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Champions } from "@/assets";
-import { fontsNames, colors, textMixins } from "@/styles";
+import { Champions } from "@assets";
+import { fontsNames, colors, textMixins } from "@styles";
 
 export const StyledChampionsSection = styled.section`
     overflow: hidden;
