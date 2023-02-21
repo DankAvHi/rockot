@@ -1,7 +1,7 @@
 "use client";
+import { ChampionsSection } from "./ChampionsSection";
+import { Header } from "./Header";
 import { Main } from "./home.styles";
-import ChampionsSection from "./sections/ChampionsSection/ChampionsSection";
-import Header from "./sections/Header/Header";
 
 const page = () => {
     return (
