@@ -11,6 +11,4 @@ export const specialColors = {
     glassBorderColor: commonColors.white100,
 };
 
-const colors = { ...commonColors, ...specialColors };
-
-export default colors;
+export const colors = { ...commonColors, ...specialColors };
