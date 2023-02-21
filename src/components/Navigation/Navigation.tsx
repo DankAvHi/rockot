@@ -1,4 +1,4 @@
-import useScrollPosition from "../../hooks/scrollPosition.hook";
+import { useScrollPosition } from "@/hooks";
 import { Logo } from "./Logo";
 import { Container, StyledNavigation } from "./Navigation.styles";
 

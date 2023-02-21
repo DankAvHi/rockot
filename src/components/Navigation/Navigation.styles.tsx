@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import stylesVariables from "../../styles/variables.styles";
+import { stylesVariables } from "@/styles";
 
 export const StyledNavigation = styled.nav<{ $opacity: boolean }>`
     position: sticky;

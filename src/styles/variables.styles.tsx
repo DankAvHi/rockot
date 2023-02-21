@@ -1,5 +1,5 @@
-import colors from "./colors.styles";
-import fonts from "./fonts/index.font";
+import { colors } from "./colors.styles";
+import { fonts } from "./fonts";
 
 const stylesVariables = {
     appBackgroundColor: colors.black10,
