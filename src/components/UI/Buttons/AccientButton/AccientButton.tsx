@@ -1,9 +1,7 @@
-import { CustomButtonProps } from "../Button";
+import { CustomButtonProps } from "../ButtonTypes";
 import { StyledAccientButton } from "./AccientButton.styles";
 
-const AccientButton = (props: CustomButtonProps) => {
+export const AccientButton = (props: CustomButtonProps) => {
     const { children, ...buttonProps } = props;
     return <StyledAccientButton {...buttonProps}>{children}</StyledAccientButton>;
 };
-
-export default AccientButton;
