@@ -1,17 +1,65 @@
-import { css } from "styled-components";
+import * as styled from "styled-components";
+import { colors } from "./colors.styles";
+import { fontsMixins } from "./fonts";
+import { stylesVariables as variables } from "./variables.styles";
 
-export const rootContainer = css`
-    margin: 0 auto;
-    padding: 24px 12px;
+export const GlobalStyles = styled.createGlobalStyle`
+    ${fontsMixins}
+    * {
+        list-style: none;
+        margin: 0;
 
-    max-width: 1440px;
-    width: 100%;
+        border: none;
 
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+        padding: 0;
+
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+
+        background: transparent;
+
+        font-family: ${variables.appFontFamily};
+        font-size: ${variables.appFontSize};
+        font-weight: ${variables.appFontWeight};
+        text-decoration: none;
+        color: ${colors.white100};
+    }
+    *::-webkit-scrollbar {
+        border-left: 1px solid ${colors.white100};
+
+        background-color: ${variables.appBackgroundColor};
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: ${colors.white100};
+    }
+
+    a,
+    button,
+    input[type="submit"] {
+        cursor: pointer;
+    }
+
+    img {
+        user-drag: none;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    a,
+    p,
+    span {
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    html,
+    body {
+        min-height: 100%;
+
+        background-color: ${variables.appBackgroundColor};
+    }
 `;
-
-const globalStyles = { rootContainer };
-
-export default globalStyles;
