@@ -1,2 +1,2 @@
 export { Button } from "./Button";
-export {AccientButton} from "./AccientButton"
+export { AccientButton } from "./AccientButton";
