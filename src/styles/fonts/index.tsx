@@ -15,6 +15,4 @@ export const fontsNames = {
     rawhideRawFontName,
 };
 
-const fonts = { mixins: fontsMixins, names: fontsNames };
-
-export default fonts;
+export const fonts = { mixins: fontsMixins, names: fontsNames };
