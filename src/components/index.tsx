@@ -1,3 +1,4 @@
-export { Navigation } from "./Navigation";
-export { Footer } from "./Footer";
-export { AccientButton, Button } from "./UI";
+export * from "./Navigation";
+export * from "./Footer";
+export * from "./UI";
+
