@@ -40,6 +40,4 @@ export const oswaldFontMixin = css`
 
 export const oswaldFontName = "oswald";
 
-const oswaldFont = { name: oswaldFontName, mixin: oswaldFontMixin };
-
-export default oswaldFont;
+export const oswaldFont = { name: oswaldFontName, mixin: oswaldFontMixin };

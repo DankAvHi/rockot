@@ -9,6 +9,4 @@ export const rawhideRawFontMixin = css`
 
 export const rawhideRawFontName = "Rawhide Raw";
 
-const rawhideRawFont = { name: rawhideRawFontName, mixin: rawhideRawFontMixin };
-
-export default rawhideRawFont;
+export const rawhideRawFont = { name: rawhideRawFontName, mixin: rawhideRawFontMixin };

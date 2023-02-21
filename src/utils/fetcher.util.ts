@@ -1,4 +1,4 @@
-const fetcher = async <JSON = unknown>(input: RequestInfo, init?: RequestInit): Promise<JSON> => {
+export const fetcher = async <JSON = unknown>(input: RequestInfo, init?: RequestInit): Promise<JSON> => {
     const res = await fetch(input, init);
 
     if (!res.ok) {
@@ -13,5 +13,3 @@ const fetcher = async <JSON = unknown>(input: RequestInfo, init?: RequestInit): 
 
     return res.json();
 };
-
-export default fetcher;
