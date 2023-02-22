@@ -1,9 +1,7 @@
-import { StyledTemplateName } from "./TemplateName.styles";
+import { TemplateNameStyles as S } from "./TemplateName.styles";
 
 type TemplateNameProps = object;
 
-const TemplateName = (props: TemplateNameProps) => {
-    return <StyledTemplateName></StyledTemplateName>;
+export const TemplateName = (props: TemplateNameProps) => {
+    return <S.TemplateName></S.TemplateName>;
 };
-
-export default TemplateName;
