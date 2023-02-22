@@ -3,7 +3,7 @@ import { ChampionsSection } from "./ChampionsSection";
 import { Header } from "./Header";
 import { HomeStyles as S } from "./home.styles";
 
-const page = () => {
+export default function page() {
     return (
         <>
             <Header />
@@ -12,6 +12,4 @@ const page = () => {
             </S.Main>
         </>
     );
-};
-
-export default page;
+}
