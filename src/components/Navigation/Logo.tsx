@@ -1,9 +1,9 @@
-import { LogoImage, StyledLogo } from "./Logo.styles";
+import { LogoStyles as S } from "./Logo.styles";
 
 export const Logo = () => {
     return (
-        <StyledLogo type={"link"} href="/">
-            <LogoImage alt={"Логотип клуба"} />
-        </StyledLogo>
+        <S.Logo type={"link"} href="/">
+            <S.LogoImage alt={"Логотип клуба"} />
+        </S.Logo>
     );
 };

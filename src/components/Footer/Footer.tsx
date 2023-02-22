@@ -1,5 +1,5 @@
-import { StyledFooter } from "./Footer.styles";
+import { FooterStyles as S } from "./Footer.styles";
 
 export const Footer = () => {
-    return <StyledFooter />;
+    return <S.Footer />;
 };

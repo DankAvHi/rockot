@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const StyledTemplateName = styled.div``;
+export const TemplateNameStyles = {
+    TemplateName: styled.div``,
+};

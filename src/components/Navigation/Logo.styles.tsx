@@ -3,18 +3,20 @@ import { LogoMin } from "@assets";
 import { colors } from "@styles";
 import { Button } from "../UI";
 
-export const StyledLogo = styled(Button)`
-    border-radius: 100%;
+export const LogoStyles = {
+    Logo: styled(Button)`
+        border-radius: 100%;
 
-    background: linear-gradient(${colors.rockotGradientTop} 60%, ${colors.rockotGradientBottom});
+        background: linear-gradient(${colors.rockotGradientTop} 60%, ${colors.rockotGradientBottom});
 
-    width: 60px;
-    height: 60px;
-`;
+        width: 60px;
+        height: 60px;
+    `,
 
-export const LogoImage = styled(LogoMin)`
-    border-radius: 100%;
+    LogoImage: styled(LogoMin)`
+        border-radius: 100%;
 
-    width: 60px;
-    height: 60px;
-`;
+        width: 60px;
+        height: 60px;
+    `,
+};
