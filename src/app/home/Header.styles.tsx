@@ -10,7 +10,7 @@ export const HeaderStyles = {
         min-height: calc(100svh - 77px);
 
         background-image: url(${HeaderBackground.src});
-        background-position: center center;
+        background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -20,15 +20,18 @@ export const HeaderStyles = {
 
         animation: shadow 10s ease-in-out infinite;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 786px) {
             background-image: url(${HeaderBackgroundTablet.src});
+
+            min-height: 100vh;
+            min-height: 100svh;
         }
 
         @media screen and (max-width: 650px) {
             background-image: url(${HeaderBackgroundMobile.src});
         }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-height: 425px) {
             min-height: 100vh;
             min-height: 100svh;
         }
@@ -72,6 +75,10 @@ export const HeaderStyles = {
             padding: 32px 18px;
         }
 
+        @media screen and (max-height: 425px) {
+            padding: 24px 12px;
+        }
+
         &:hover {
             backdrop-filter: blur(15px);
         }
@@ -87,6 +94,10 @@ export const HeaderStyles = {
             max-width: 520px;
             max-height: 82px;
         }
+
+        @media screen and (max-height: 425px) {
+            max-width: 320px;
+        }
     `,
 
     HidenHeading: styled.h1`
@@ -96,6 +107,7 @@ export const HeaderStyles = {
 
     Heading: styled.h2`
         font-size: 2rem;
+        text-align: center;
 
         @media screen and (max-width: 1024px) {
             font-size: 1.5rem;
@@ -103,6 +115,12 @@ export const HeaderStyles = {
 
         @media screen and (max-width: 425px) {
             font-size: 1.2rem;
+        }
+
+        @media screen and (max-height: 425px) {
+            max-width: 620px;
+
+            font-size: 1rem;
         }
     `,
 
