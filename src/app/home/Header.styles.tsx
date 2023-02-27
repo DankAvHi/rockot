@@ -27,7 +27,7 @@ export const HeaderStyles = {
             min-height: 100svh;
         }
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 500px) and (min-height: 600px) {
             background-image: url(${HeaderBackgroundMobile.src});
         }
 
