@@ -28,10 +28,13 @@ export const HeaderStyles = {
         }
 
         @media screen and (max-width: 500px) and (min-height: 600px) {
+            padding: 12px;
             background-image: url(${HeaderBackgroundMobile.src});
         }
 
         @media screen and (max-height: 425px) {
+            padding: 12px;
+
             min-height: 100vh;
             min-height: 100svh;
         }
