@@ -18,8 +18,6 @@ export const HeaderStyles = {
         align-items: flex-end;
         justify-content: center;
 
-        animation: shadow 10s ease-in-out infinite;
-
         @media screen and (max-width: 786px) {
             background-image: url(${HeaderBackgroundTablet.src});
 
@@ -39,18 +37,6 @@ export const HeaderStyles = {
 
             min-height: 100vh;
             min-height: 100svh;
-        }
-
-        @keyframes shadow {
-            0% {
-                filter: saturate(1);
-            }
-            50% {
-                filter: saturate(1.5);
-            }
-            100% {
-                filter: saturate(1);
-            }
         }
     `,
 
