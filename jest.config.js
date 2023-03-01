@@ -10,9 +10,15 @@ const customJestConfig = {
     moduleDirectories: ["node_modules", "<rootDir>/"],
 
     moduleNameMapper: {
-        "@(.*)$": "<rootDir>/src/$1",
+        "^@styles": "<rootDir>/src/styles/index.tsx",
+        "^@components": "<rootDir>/src/components/index.tsx",
+        "\\.svg$": "<rootDir>/__mocks__/svg.mock.tsx",
+        "^@assets/icons": `<rootDir>/src/assets/icons/index.tsx`,
+        "^@assets/images": `<rootDir>/src/assets/images/index.tsx`,
+        "^@hooks": "<rootDir>/src/hooks/index.tsx",
     },
     testEnvironment: "jest-environment-jsdom",
+    testMatch: ["<rootDir>/src/**/*.spec.tsx"],
 };
 
 module.exports = createJestConfig(customJestConfig);
