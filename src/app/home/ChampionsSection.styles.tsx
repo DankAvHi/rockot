@@ -1,5 +1,5 @@
+import { Champions } from "@assets/images";
 import styled from "styled-components";
-import { Champions } from "@assets";
 import { fontsNames, colors, textMixins } from "@styles";
 
 export const ChampionsSectionStyles = {
@@ -47,7 +47,7 @@ export const ChampionsSectionStyles = {
         width: 100%;
         height: 427px;
 
-        background: url(${Champions.src});
+        background-image: url(${Champions.src});
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

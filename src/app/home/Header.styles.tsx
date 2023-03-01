@@ -1,5 +1,6 @@
+import { Logo as LogoImage } from "@assets/icons";
+import { HeaderBackground, HeaderBackgroundMobile, HeaderBackgroundTablet } from "@assets/images";
 import styled from "styled-components";
-import { HeaderBackground, HeaderBackgroundMobile, HeaderBackgroundTablet, Logo as LogoImage } from "@assets";
 import { colors, textMixins } from "@styles";
 
 export const HeaderStyles = {

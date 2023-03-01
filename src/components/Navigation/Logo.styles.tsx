@@ -1,5 +1,5 @@
+import { LogoMin } from "@assets/icons";
 import styled from "styled-components";
-import { LogoMin } from "@assets";
 import { colors } from "@styles";
 import { Button } from "../UI";
 
