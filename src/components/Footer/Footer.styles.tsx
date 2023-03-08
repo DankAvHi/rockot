@@ -9,4 +9,14 @@ export const FooterStyles = {
         justify-content: center;
         align-items: flex-start;
     `,
+
+    Container: styled.div`
+        padding: 24px 12px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 64px;
+    `,
+
 };
