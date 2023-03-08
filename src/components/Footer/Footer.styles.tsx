@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles";
+import { Button } from "../UI";
 
 export const FooterStyles = {
     Footer: styled.footer`
@@ -24,6 +25,14 @@ export const FooterStyles = {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+    `,
+
+    MediaItem: styled.li``,
+
+    MediaLink: styled(Button)`
+        display: flex;
+        align-items: center;
+        gap: 6px;
     `,
 
 };
