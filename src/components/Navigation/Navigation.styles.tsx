@@ -17,7 +17,7 @@ export const NavigationStyles = {
 
         ${(props) => (props.$opacity ? "opacity: 0.9;" : "")}
 
-        @media screen and (max-width: 786px) {
+        @media screen and (max-width: 768px) {
             position: fixed;
             top: 10px;
             right: 10px;
@@ -51,7 +51,7 @@ export const NavigationStyles = {
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (max-width: 786px) {
+        @media screen and (max-width: 768px) {
             display: none;
         }
         @media screen and (max-height: 425px) {

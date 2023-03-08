@@ -18,7 +18,7 @@ export const HeaderStyles = {
         align-items: flex-end;
         justify-content: center;
 
-        @media screen and (max-width: 786px) {
+        @media screen and (max-width: 768px) {
             background-image: url(${HeaderBackgroundTablet.src});
 
             min-height: 100vh;
