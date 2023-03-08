@@ -35,4 +35,10 @@ export const FooterStyles = {
         gap: 6px;
     `,
 
+    Navigation: styled.nav`
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    `,
 };
