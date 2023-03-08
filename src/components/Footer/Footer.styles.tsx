@@ -19,4 +19,11 @@ export const FooterStyles = {
         gap: 64px;
     `,
 
+    MediaList: styled.ul`
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    `,
+
 };
