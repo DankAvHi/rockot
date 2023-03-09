@@ -21,6 +21,16 @@ export const FooterStyles = {
         justify-content: flex-end;
         align-items: flex-start;
         gap: 64px;
+
+        @media screen and (max-width: 1440px) {
+            padding: 24px 48px;
+        }
+        @media screen and (max-width: 768px) {
+            justify-content: flex-start;
+        }
+        @media screen and (max-width: 425px) {
+            justify-content: center;
+        }
     `,
 
     MediaList: styled.ul`
