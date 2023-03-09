@@ -37,7 +37,7 @@ export const FooterStyles = {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 12px;
     `,
 
     MediaItem: styled.li``,
