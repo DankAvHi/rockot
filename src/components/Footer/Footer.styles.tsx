@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles";
+import { colors, fontsNames } from "@styles";
 import { Button } from "../UI";
 
 export const FooterStyles = {
@@ -50,10 +50,12 @@ export const FooterStyles = {
         font-size: 1.5rem;
     `,
 
-    Navigation: styled.nav`
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+    LogoText: styled.span`
+        font-family: ${fontsNames.rawhideRawFontName};
+        color: ${colors.rockotGradientTop};
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.75rem;
+        }
     `,
 };
