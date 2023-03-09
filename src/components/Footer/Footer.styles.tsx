@@ -14,6 +14,9 @@ export const FooterStyles = {
     Container: styled.div`
         padding: 24px 12px;
 
+        max-width: 1440px;
+        width: 100%;
+
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
