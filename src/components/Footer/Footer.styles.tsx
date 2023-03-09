@@ -46,6 +46,8 @@ export const FooterStyles = {
         display: flex;
         align-items: center;
         gap: 6px;
+
+        font-size: 1.5rem;
     `,
 
     Navigation: styled.nav`
