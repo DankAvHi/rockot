@@ -1,5 +1,10 @@
 import { FooterStyles as S } from "./Footer.styles";
 
 export const Footer = () => {
-    return <S.Footer />;
+    return (
+        <S.Footer>
+            <S.Container>
+            </S.Container>
+        </S.Footer>
+    );
 };
