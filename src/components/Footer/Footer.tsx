@@ -14,7 +14,7 @@ export const Footer = () => {
                     </S.MediaItem>
                     {mediaLinks.map(({ href, icon: Icon, name }) => (
                         <S.MediaItem key={name}>
-                            <S.MediaLink type="link" href={href} external={true}>
+                            <S.MediaLink type="link" href={href} external={true} target="_blank">
                                 <Icon />
                                 {name}
                             </S.MediaLink>
